@@ -1,0 +1,17 @@
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/bin/Debug/net6.0/appData1
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/bin/Debug/net6.0/appData1.deps.json
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/bin/Debug/net6.0/appData1.runtimeconfig.json
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/bin/Debug/net6.0/appData1.dll
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/bin/Debug/net6.0/ref/appData1.dll
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/bin/Debug/net6.0/appData1.pdb
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.csproj.AssemblyReference.cache
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.AssemblyInfoInputs.cache
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.AssemblyInfo.cs
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.csproj.CoreCompileInputs.cache
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.dll
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/ref/appData1.dll
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.pdb
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.genruntimeconfig.cache
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/admin/RiderProjects/MoneyProject/appData1/appData1/obj/Debug/net6.0/appData1.csproj.CopyComplete
