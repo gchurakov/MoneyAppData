@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AppData;
+using Newtonsoft.Json;
 
 namespace AppData1
 {
@@ -20,6 +21,25 @@ namespace AppData1
                     sum += account.Balance;
                 return sum;
             }
+        }
+
+        public void ToJson(string jsonFileName = "default_name.json")
+        {
+            // сохранение данных
+            string json = JsonConvert.SerializeObject(this, Formatting.Indented);
+            FileStream fs = new FileStream(jsonFileName, FileMode.OpenOrCreate);
+        }
+        
+        public static Profile FromJson(string jsonFileName = "default_name.json")
+        {
+            // чтение данных
+            Profile profile;
+            using (var reader = new StreamReader(jsonFileName))
+            {
+                string json = reader.ReadToEnd();
+                profile = JsonConvert.DeserializeObject<Profile>(json);
+            }
+            return profile;
         }
     }
 }
