@@ -13,7 +13,7 @@ namespace appData1
 
         public static async Task Main(string[] args)
         {
-            Profile testProfile = new Profile();
+            Profile testProfile = new Profile("Алексей");
             testProfile.Accounts.Add(new Account("Мульти Карта ВТБ", 2095));
             testProfile.Goals.Add(new Goal());
             testProfile.Categories.Add(new Category("Продукты", 5000));

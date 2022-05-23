@@ -7,6 +7,8 @@ namespace AppData1
     public class Profile
     {
         //профиль юзера со всеми данными
+        public string UserName = null;
+        
         public List<MoneyIvent> Transactions = new List<MoneyIvent>();
         public List<Goal> Goals = new List<Goal>();
         public List<Category> Categories = new List<Category>();
@@ -23,6 +25,12 @@ namespace AppData1
             }
         }
 
+        public Profile(){}
+
+        public Profile(string name)
+        {
+            UserName = name;
+        }
         public void ToJson(string jsonFileName = "default_name.json")
         {
             // сохранение данных
