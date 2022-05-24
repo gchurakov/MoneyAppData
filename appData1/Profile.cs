@@ -8,6 +8,7 @@ namespace AppData1
     {
         //профиль юзера со всеми данными
         public string UserName = null;
+        public int PinCode = 0;//пин код
         
         public List<MoneyIvent> Transactions = new List<MoneyIvent>();
         public List<Goal> Goals = new List<Goal>();
@@ -35,19 +36,35 @@ namespace AppData1
         {
             // сохранение данных
             string json = JsonConvert.SerializeObject(this, Formatting.Indented);
-            FileStream fs = new FileStream(jsonFileName, FileMode.OpenOrCreate);
+            using (var writer = new StreamWriter(jsonFileName))
+            {
+                writer.Write(json);
+            }
         }
         
         public static Profile FromJson(string jsonFileName = "default_name.json")
         {
             // чтение данных
-            Profile profile;
-            using (var reader = new StreamReader(jsonFileName))
+            string json;
+            try
             {
-                string json = reader.ReadToEnd();
-                profile = JsonConvert.DeserializeObject<Profile>(json);
+                using (var reader = new StreamReader(jsonFileName))
+                {
+                    json = reader.ReadToEnd();
+                }
+
+                return JsonConvert.DeserializeObject<Profile>(json);
             }
-            return profile;
+            catch (IOException e)
+            {
+                Console.WriteLine($"Ошибка при чтении файла! {e.Message}");
+                return new Profile();
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine($"Ошибка при чтении файла! {e.Message}");
+                return new Profile();
+            }
         }
     }
 }
