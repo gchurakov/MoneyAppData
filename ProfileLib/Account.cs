@@ -1,4 +1,4 @@
-namespace AppData1
+namespace AppData
 {
     public class Account
     {

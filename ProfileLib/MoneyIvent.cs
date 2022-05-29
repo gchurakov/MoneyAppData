@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AppData1
+namespace AppData
 {
     public class MoneyIvent
     {

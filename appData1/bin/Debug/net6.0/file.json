@@ -1,0 +1,55 @@
+{
+  "UserName": "Алексей",
+  "PinCode": 0,
+  "Transactions": [
+    {
+      "Title": "Стипендия",
+      "Money": 2095.0,
+      "Account": "Мульти Карта ВТБ",
+      "Regularity": 0,
+      "Date": "2022-04-29T00:00:00",
+      "Category": null
+    },
+    {
+      "Title": "Брюки",
+      "Money": 5150.3,
+      "Account": "Мульти Карта ВТБ",
+      "Regularity": 0,
+      "Date": "2022-05-24T00:00:00+05:00",
+      "Category": null
+    }
+  ],
+  "Goals": [
+    {
+      "Title": null,
+      "MoneyGoal": 0.0,
+      "MoneyFounded": 0.0,
+      "Vault": null,
+      "Start": "2022-05-24T00:00:00+05:00",
+      "Finish": "0001-01-01T00:00:00",
+      "Regularity": 0,
+      "IsFounded": false
+    }
+  ],
+  "Categories": [
+    {
+      "Title": "Продукты",
+      "MoneyPlanned": 5000.0,
+      "MoneySpent": 0.0,
+      "Balance": 5000.0
+    },
+    {
+      "Title": "Одежда",
+      "MoneyPlanned": 2900.0,
+      "MoneySpent": 5150.3,
+      "Balance": -2250.3
+    }
+  ],
+  "Accounts": [
+    {
+      "Title": "Мульти Карта ВТБ",
+      "Balance": 2095.0
+    }
+  ],
+  "Balance": 2095.0
+}
