@@ -13,20 +13,20 @@ namespace AppData1
          */
         
         //для всех
-        public string Title = null;// название
+        public string Title { get; set; }= null;// название
         
-        public double Money = 0;// денежная сумма (+или-)
+        public double Money { get; set; }= 0;// денежная сумма (+или-)
 
-        public string Account = null;// счет зачисления/списания
+        public string Account { get; set; }= null;// счет зачисления/списания
         
         //вариативная смена регулярности транзакции
-        public int Regularity = 0;// как часто? (кол-во дней)
+        public int Regularity { get; set; }= 0;// как часто? (кол-во дней)
         
         //вариативная смена даты транзакции
-        public DateTime Date = DateTime.Today.Date;//дата денежного ивента
+        public DateTime Date{ get; set; } = DateTime.Today.Date;//дата денежного ивента
         
         //для расходов
-        public string Category = null;//категория (для трат)
+        public string Category { get; set; }= null;//категория (для трат)
 
         public MoneyIvent(){}
         

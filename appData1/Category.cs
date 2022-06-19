@@ -4,10 +4,10 @@ namespace AppData1
     {
         // категория расходов и ее хорактеристики 
         
-        public string Title = null;// название
-        public double MoneyPlanned = 0;//запланировано
-        public double MoneySpent = 0;//потрачено
-        public double Balance;//остаток
+        public string Title { get; set; } = null;// название
+        public double MoneyPlanned { get; set; }= 0;//запланировано
+        public double MoneySpent { get; set; }= 0;//потрачено
+        public double Balance{ get; set; }//остаток
 
         public Category()
         {

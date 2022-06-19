@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Newtonsoft.Json;
 
 namespace AppData1
@@ -6,13 +7,13 @@ namespace AppData1
     public class Profile
     {
         //профиль юзера со всеми данными
-        public string UserName = null;
-        public int PinCode = 0;//пин код
+        public string UserName{ get; set; } = null;
+        public int PinCode{ get; set; } = 0;//пин код
         
-        public List<MoneyIvent> Transactions = new List<MoneyIvent>();
-        public List<Goal> Goals = new List<Goal>();
-        public List<Category> Categories = new List<Category>();
-        public List<Account> Accounts = new List<Account>();
+        public List<MoneyIvent> Transactions{ get; set; } = new List<MoneyIvent>();
+        public List<Goal> Goals{ get; set; } = new List<Goal>();
+        public List<Category> Categories{ get; set; } = new List<Category>();
+        public List<Account> Accounts{ get; set; } = new List<Account>();
 
         public double Balance
         {

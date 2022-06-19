@@ -6,19 +6,19 @@ namespace AppData1
     public class Goal
     {
         // цели / копилки / сборы денег
-        public string Title = null;// название
+        public string Title{ get; set; } = null;// название
         
-        public double MoneyGoal = 0;// цель денежная сумма 
-        public double MoneyFounded = 0;// собранная денежная сумма 
+        public double MoneyGoal{ get; set; } = 0;// цель денежная сумма 
+        public double MoneyFounded{ get; set; } = 0;// собранная денежная сумма 
         
-        public string Vault = null;// счета хранения средств
+        public string Vault{ get; set; } = null;// счета хранения средств
         
-        public DateTime Start = DateTime.Today.Date;//начало
-        public DateTime Finish = default;//конец
+        public DateTime Start { get; set; }= DateTime.Today.Date;//начало
+        public DateTime Finish { get; set; }= default;//конец
         
-        public int Regularity = 0;// как часто? (кол-во дней)
+        public int Regularity { get; set; }= 0;// как часто? (кол-во дней)
         
-        public bool IsFounded;// деньги собраны
+        public bool IsFounded{ get; set; }// деньги собраны
 
         public Goal()
         {

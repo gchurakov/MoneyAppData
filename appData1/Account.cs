@@ -3,8 +3,8 @@ namespace AppData1
     public class Account
     {
         //банковские счета пользователя названия и балансы
-        public string Title = null;
-        public double Balance = 0;
+        public string Title{ get; set; } = "";
+        public double Balance { get; set; }= 0;
 
         public Account(){}
         public Account(string title, double balance)
