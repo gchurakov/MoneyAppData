@@ -7,7 +7,6 @@ namespace AppData1
         public string Title { get; set; } = null;// название
         public double MoneyPlanned { get; set; }= 0;//запланировано
         public double MoneySpent { get; set; }= 0;//потрачено
-        public double Balance{ get; set; }//остаток
 
         public Category()
         {

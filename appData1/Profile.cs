@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Xml.Serialization;
 using Newtonsoft.Json;
 
 namespace AppData1
 {
+    [XmlType(TypeName = "profile")]
     public class Profile
     {
         //профиль юзера со всеми данными
         public string UserName{ get; set; } = null;
-        public int PinCode{ get; set; } = 0;//пин код
-        
         public List<MoneyIvent> Transactions{ get; set; } = new List<MoneyIvent>();
         public List<Goal> Goals{ get; set; } = new List<Goal>();
         public List<Category> Categories{ get; set; } = new List<Category>();

@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace AppData1
 {
+    [XmlType(TypeName = "goal")]
     public class Goal
     {
         // цели / копилки / сборы денег
