@@ -10,14 +10,12 @@ namespace AppData1
 
         public Category()
         {
-            Balance = MoneyPlanned - MoneySpent;
         }
         
         public Category(string title, double moneyPlanned)
         {
             Title = title;
             MoneyPlanned = moneyPlanned;
-            Balance = MoneyPlanned - MoneySpent;
         }
         
         public Category(string title, double moneySpent, int isOnlySpent)
@@ -32,13 +30,12 @@ namespace AppData1
             Title = title;
             MoneyPlanned = moneyPlanned;
             MoneySpent = moneySpent;
-            Balance = MoneyPlanned - MoneySpent;
         }
         
         public override string ToString()
         {
             // "Название:1000:12:988;"
-            return $"{Title}:{MoneyPlanned}:{MoneySpent}:{Balance};";
+            return $"{Title}:{MoneyPlanned}:{MoneySpent};";
         }
         
     }
